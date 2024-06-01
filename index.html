@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Course Scheduler</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <form id="course-form">
+    <label for="course-name">Course Name:</label>
+    <input type="text" id="course-name" required>
+    <label for="start-time">Start Time:</label>
+    <input type="time" id="start-time" required>
+    <label for="end-time">End Time:</label>
+    <input type="time" id="end-time" required>
+    <input type="submit" value="Add Course">
+  </form>
+
+  <table id="course-table">
+    <thead>
+      <tr>
+        <th>Course Name</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Course rows will be added here -->
+    </tbody>
+  </table>
+
+  <select id="optimization-method">
+    <option value="greedy">Greedy</option>
+    <option value="backtracking">Backtracking</option>
+  </select>
+  <button id="optimize-btn">Optimize Schedule</button>
+
+  <table id="optimized-table">
+    <thead>
+      <tr>
+        <th>Course Name</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Optimized course rows will be added here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
